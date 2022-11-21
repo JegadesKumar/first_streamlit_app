@@ -25,6 +25,12 @@ fruits_to_show = my_fruit_list.loc[fruits_selected]
 streamlit.dataframe(fruits_to_show)
 # streamlite page url:https://jegadeskumar-first-streamlit-app-streamlit-app-1su6dc.streamlit.app/
 
+streamlit.image(
+df2[0],
+width=400,
+caption= product_caption
+)
+
 #create the repeatable code block (called a function)
 def get_fruityvice_data(this_fruit_choice):
 #streamlit.write('The user entered ', fruit_choice)
